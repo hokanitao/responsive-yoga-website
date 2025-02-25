@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Lora", serif;
 }
 
 /* 376px */
@@ -14,11 +15,11 @@
 }
 /* K starts here */
 
-.hearder {
+.header {
   
 }
 /* 376px */
-@media screen and (max-width: 376px) {
+@media screen Zxand (max-width: 376px) {
 
 }
 /* 1440px */
