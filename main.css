@@ -28,12 +28,68 @@
 
 
 /* Kaho starts here */
+/***********************/
 /* 376px */
 @media screen and (max-width: 376px) {
-  .left_1{
-    font-family:sans-serif;
 
+  .middle_start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
   }
+
+  .left_1{
+    display: flex;
+    font-family:sans-serif;
+  }
+
+  h1{
+    color: red;
+  }
+
+  .starbox{
+    position: relative;
+    width: 80%;
+    margin:auto;
+    text-align: center;
+  }
+
+  .littlestar {
+    position: absolute;
+    top: 3px;
+    left: 60px;
+    width: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
