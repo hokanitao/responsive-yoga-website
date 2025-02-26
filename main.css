@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  background-color: #F5F0FF;
+}
+
 /* 376px */
 @media screen and (max-width: 376px) {
 
@@ -14,7 +18,7 @@
 }
 /* K starts here */
 
-.hearder
+/*.header*/
 /* 376px */
 @media screen and (max-width: 376px) {
 
@@ -29,23 +33,35 @@
 
 /* Kaho starts here */
 /***********************/
-/* 376px */
+/* 376px*/
 @media screen and (max-width: 376px) {
+.middle_start{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  .middle_start{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+.middle_start h1{
+  display: flex;
+  align-items: center;
+}
+
+.list_box{
+    width: 230px;
+    height: 112px;
   }
 
   .left_1{
     display: flex;
-    font-family:sans-serif;
+  }
+
+  p{
+    text-align: center;
   }
 
   h1{
-    color: red;
+    text-align: center;
   }
 
   .starbox{
@@ -57,9 +73,176 @@
 
   .littlestar {
     position: absolute;
-    top: 3px;
-    left: 60px;
-    width: 70px;
+    top: -30px;
+    left:-5px;
+    width: 50px;
+}
+
+.position_container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.set_text{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-weight: bold;
+  transform: translate(-50%, -50%); 
+}
+
+/*happiness part*/
+.happiness_part{
+
+}
+
+.middle_header{
+  font-size: 32px;
+  font-family: ;
+  text-align: center;
+}
+
+.right_2,
+.left3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.button_picture,
+.startfree{
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.left2{
+  display: flex;
+  position: relative;
+  height: auto;
+  min-height: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.heart_mark{
+  width: 30px;
+  height: auto;
+  margin-left: auto;
+  top: 10px;
+  right: 20px;
+}
+
+.inside_text1,
+.inside_text2{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  background-color: white;
+  position: absolute;
+  border: none;
+  border-radius: 20px;
+}
+
+.inside_text1{
+  position: absolute;
+  left: 10px;
+  top: 100px;
+}
+
+.heart_rate2{
+  display: flex;
+}
+
+.p_color{
+  color:red;
+}
+
+/*anytime part*/
+.right_3{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 300px; /* 画像の幅に合わせて調整 */
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.play_image,
+.runnning_image{
+  width: 20px;
+}
+
+.yoga_image1{
+  top: 10px;
+  left: 90px;
+  z-index: 3;
+  width: 120%;
+  max-width: 150px; /* 画像サイズ調整 */
+  position: absolute;
+}
+
+.yoga_image2 {
+  top: 70px;
+  left: 120px;
+  z-index: 2; /* 手前の画像 */
+  width: 100%;
+  max-width: 150px; /* 画像サイズ調整 */
+  position: absolute;
+}
+
+.mini_block{
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  background-color: white;
+  flex-wrap: nowrap;
+}
+
+/*subscribe part*/
+.subscribe_box{
+  display: flex;
+  flex-direction: ;
+}
+
+.mail_button {
+  display: flex; /* アイコンとテキストを横並び */
+  align-items: center; /* 中央揃え */
+  padding: 10px 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 20px; /* アイコンサイズ調整 */
+  height: auto;
+  margin-right: 8px; /* テキストとの間隔 */
+}
+}
+
+/*kaho 1440px*/
+@media screen and (min-width: 377px) and (max-width: 1440px){
+.middle_start{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+
+.left1_text{
+    width: 400px;
+    height: 230px;
+  }
+
+
+
 }
 
 
@@ -72,32 +255,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
 
 
 
 
 /* K starts here */
-.footer/* 376px */
+/* .footer376px */
 @media screen and (max-width: 376px) {
 
 }
