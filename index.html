@@ -13,22 +13,49 @@
   <header>
     <nav>
       <a id="yoga" href="#">Yoga</a>
-      <div>
-        <input type="checkbox" id="theme"></input>
-        <label for="theme"><img id="moon" src="./assets/moon-icon.svg"></label>
-        <label for="theme"><img id="sun" src="./assets/sun-icon.svg"></label>
-
-        <input type="checkbox" id="menu-toggle"></input>
-        <label for="menu-toggle"><img id="moon" src="./assets/menu-icon.svg"></label>
-        <label for="menu-toggle"><img id="sun" src="./assets/menu-icon2.svg"></label>
+      <div class="flex">
+        <div class="order1">
+          <input type="checkbox" id="theme"></input>
+          <label for="theme"><img id="moon" src="./assets/moon-icon.svg"></label>
+          <label for="theme"><img id="sun" src="./assets/sun-icon.svg"></label>  
+        </div>
+        <div class="order2">
+          <input type="checkbox" id="menu-toggle"></input>
+          <label for="menu-toggle" class="menu-icon"><img id="moon" src="./assets/menu-icon.svg"></label>
+          <label for="menu-toggle" class="menu-icon"><img id="sun" src="./assets/menu-icon2.svg"></label>
           <ul class="menu">
             <label for="menu-toggle" class="close-button"><img src="./assets/close.svg"></label>
             <label for="menu-toggle" class="close-button2"><img src="./assets/close-lighter.svg"></label>
-            <li id="currentpage">Home</li>
-            <li>Health</li>
-            <li>Place</li>
-            <li>Follow</li>
+            <li id="currentpage">Home
+              <ul class="hiddenlist">
+                <li>Option 1</li>
+                <li>Option 2</li>
+                <li>Option 3</li>
+                <li>Option 4</li>
+                <li>Option 5</li>
+              </ul>
+            </li>
+            <li>Health
+              <ul class="hiddenlist">
+                <li>Option 1</li>
+                <li>Option 2</li>
+                <li>Option 3</li>
+                <li>Option 4</li>
+                <li>Option 5</li>
+              </ul>
+            </li>
+            <li>Place
+              <ul class="hiddenlist">
+                <li>Option 1</li>
+                <li>Option 2</li>
+                <li>Option 3</li>
+                <li>Option 4</li>
+                <li>Option 5</li>
+              </ul>
+            </li>
+            <li id="hover">Follow</li>
           </ul>
+        </div>
       </div>
     </nav>
   </header>
