@@ -9,14 +9,10 @@ body {
   background-color: #F5F0FF;
 }
 
-
 /* K starts here */
-
-
 :root {
   --gradient-color: linear-gradient(to right, #FF52AE, #8B52FF);
 } 
-
 
 header {
   font-family: "Lora", serif;
@@ -46,7 +42,7 @@ nav ul li {
   /* 1440px */
   @media screen and (min-width: 377px) {
     font-size: 1.5rem;
-    }
+  }
 }
 
 .flex {
@@ -76,6 +72,9 @@ nav img {
 body:has(#theme:checked) {
   background-color: #14092A;
   color: #D1C0F1;
+  h1, .middle_header, .left1_text, .grey_p {
+    color: #D1C0F1;
+  }
   #sun, .close-button2 {
     display: inline-block;
   }
@@ -84,6 +83,12 @@ body:has(#theme:checked) {
   }
   .menu li {
     color: #D1C0F1;
+  }
+  .mini_block1, .mini_block2, .inside_text_1, .inside_text_2 {
+    background-color: #372A51 ;
+  }
+  .grid_picture {
+    border: 5px solid #372A51;
   }
   footer {
     background-color: #14092A ;
@@ -141,7 +146,6 @@ body:has(#theme:checked) {
     color: #14092A;
   }
   .hiddenlist {
-    display: none;
     position: absolute;
     top: 30px;
     left: 0px;
@@ -217,6 +221,7 @@ body:has(#theme:checked) {
   @media screen and (min-width: 377px) {
     display: grid;
     grid-template-rows: 3fr 0.5fr 0.5fr 1fr;
+    text-align: left;
   }
 }
 
@@ -226,14 +231,15 @@ body:has(#theme:checked) {
 
 .section1 h1 {
   font-family: "Lora", serif;  
-    font-size: 3rem;
-    font-weight: 500;
-    margin: 2rem 0;
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 2rem 0;
   /* 1440px */
   @media screen and (min-width: 377px) {
     font-size: 5.5rem;
     font-weight: 400;
     padding: 1.5rem 0;
+    text-align: left;
   }
 }
 
@@ -242,6 +248,7 @@ body:has(#theme:checked) {
 }
 
 .left > p {
+  text-align: left;
   /* 1440px */
   @media screen and (min-width: 377px) {
   padding-right: 9rem;
@@ -1075,18 +1082,7 @@ body:has(#theme:checked) {
   border: 5px solid blue;
   border-radius: 50px;
 }
-
-
-
-
 }
-
-
-
-
-
-
-
 
 
 
@@ -1099,7 +1095,8 @@ footer {
   /* 1440px */
   @media screen and (min-width: 377px) {
     padding: 1rem 10%;
-  }}
+  }
+}
 
 footer div {
   margin: 2rem 0;
@@ -1114,8 +1111,11 @@ footer div {
 }
 
 .footer-up-right {
+  /* 1440px */
+  @media screen and (min-width: 377px) {
   display: flex;
   justify-content: end;
+  }
 }
 
 .footer-up-right div {
@@ -1144,6 +1144,10 @@ footer p {
   @media screen and (min-width: 377px) {
     padding-right: 55%;
   }
+}
+
+footer p {
+text-align: left;
 }
 
 .borderline {
