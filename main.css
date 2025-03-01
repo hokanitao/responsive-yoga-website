@@ -406,7 +406,7 @@ body:has(#theme:checked) {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
 }
 
 .set_text{
@@ -502,6 +502,7 @@ body:has(#theme:checked) {
   height: 200px;
   justify-content: center;
   align-items: center;
+  margin-bottom: 15%;
 }
 
 .startfree{
@@ -677,14 +678,28 @@ body:has(#theme:checked) {
   border-radius: 40px;
 }
 
-.icon {
-  width: 85%; /* アイコンサイズ調整 */
-  height: auto;
-}
-
 .subscribe_box p {
   margin: 5%;
 }
+
+.mail_button{
+  background: var(--gradient-color);
+  padding: 1rem 4rem;
+  color: white;
+  font-size: 0.8rem;
+  margin-top: 5%;
+}
+
+.emailform input {
+  border: none;
+  border-radius: 30px;
+  background-color: white;
+  border-radius: 30px;
+  padding: 1rem 1rem;
+  width: 100%;
+  font-size: 10px;
+}
+
 
 }
 
@@ -709,6 +724,7 @@ body:has(#theme:checked) {
     align-items: center;
     font-family: Lora;
     font-weight: 200;
+    padding-left: 20%;
   }
   .left1_text{
     width: 100%;
@@ -716,6 +732,7 @@ body:has(#theme:checked) {
 
   .right_1{
     display: flex;
+    width: 100%;
   }
 
   .list_box{
@@ -723,33 +740,28 @@ body:has(#theme:checked) {
       height: 112px;
     }
   
-    p{
-      text-align: center;
-    }
+  h1,
+  .middle_header{
+    color: #220953;
+    font-family: Lora;
+    padding: 30px 20px;
+    font-size: 2.7rem;
+  }
   
-    h1,
-    .middle_header{
-      text-align: center;
-      color: #220953;
-      font-family: Lora;
-      padding: 30px 20px;
-      font-size: 2rem;
-    }
+  .starbox{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 5% 10% 0 30%;
+    color: #4B3E65;
+  }
   
-    .starbox{
-      position: relative;
-      width: 80%;
-      margin:auto;
-      text-align: center;
-      padding: 10% 0;
-      color: #4B3E65;
-    }
-  
-    .littlestar {
-      position: absolute;
-      top: -5px;
-      left:-5px;
-      width: 50px;
+  .littlestar {
+    position: absolute;
+    top: -5px;
+    left: 250px;
+    width: 50px;
   }
   
   .position_container{
@@ -757,7 +769,6 @@ body:has(#theme:checked) {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-bottom: 15%;
   }
   
   .set_text{
@@ -771,8 +782,14 @@ body:has(#theme:checked) {
   
   /*happiness part*/
   .happiness_part{
+    margin-top: 50px;
     display: flex;
+    gap: 10%;
     position: relative;
+  }
+
+  .happiness_part header{
+    width: 70%;
   }
   
   .grey_p{
@@ -783,44 +800,42 @@ body:has(#theme:checked) {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     order: 2;
   }
   
   .button_picture{
     display: flex;
     width: 30%;
-    margin: 0 auto;
     margin-top: 5%;
     margin-bottom: 5%;
   }
 
   
-  .left2{
+  .left_2{
     display: flex;
     height: auto;
     min-height: 200px;
     align-items: center;
     justify-content: center;
     order:1;
+    margin-left:10% ;
   }
   
-  /* .heart_mark{
-    position: absolute;
-    width: 30px;
-    height: auto;
-    right: 10px;
-  } */
+.heart_mark{
+    width: 40px;
+    padding: 5px;
+  } 
   
-  .inside_text_1,
-  .inside_text_2{
+  .inside_text_1{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 5px;
     background-color: white;
     position: absolute;
     border: none;
     border-radius: 20px;
+    left: 80px;
+    top: 50px;
   }
   
   .fitness_img{
@@ -832,35 +847,36 @@ body:has(#theme:checked) {
     display: flex;
   }
   
-  .inside_text_1{
-    position: absolute;
+  .inside_text_2{
     display: flex;
     flex-direction: column;
-    left: 50px;
-    top: 100px;
-  }
-  
-  .inside_text_2{
+    padding: 5px;
+    background-color: white;
     position: absolute;
-    left: 230px;
+    border: none;
+    border-radius: 20px;
+    left: 330px;
     top: 300px;
   }
   
   .left1_text{
     justify-content: flex-start;
   }
-  /*anytime part*/
-.anytime{
-  display: flex;
-}
 
-  .left3{
+  /*anytime part*/
+  .anytime{
+  display: flex;
+  margin: 10%;
+
+  }
+
+  .left_3{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     width: 40%;
   }
+
   .right_3{
     display: flex;
     flex-direction: column;
@@ -873,9 +889,9 @@ body:has(#theme:checked) {
 
   .startfree{
     display: flex;
-    margin: 0 auto;
     margin-top: 5%;
     margin-bottom: 5%;
+    width: 60%;
   }
   
   .mini_block1 p
@@ -892,23 +908,33 @@ body:has(#theme:checked) {
   
   .yoga_image1{
     top: 10px;
-    left: 50px;
+    left: 80px;
     z-index: 2;
-    width: 120%;
-    max-width: 70%; /* 画像サイズ調整 */
+    width: 100%;
     position: absolute;
   }
   
   .yoga_image2 {
-    top: 75px;
+    top: 150px;
     left: 130px;
     z-index: 1; /* 手前の画像 */
     width: 100%;
-    max-width: 70%; /* 画像サイズ調整 */
     position: absolute;
   }
   
-  .mini_block1,
+  .mini_block1{
+    position: absolute;
+    display: flex;
+    background-color: white;
+    flex-wrap: nowrap;
+    border-radius: 5px;
+    padding: 5px;
+    width: 190px;
+    top: 120px;
+    left:280px;
+    z-index: 3;
+  }
+  
   .mini_block2{
     position: absolute;
     display: flex;
@@ -916,26 +942,14 @@ body:has(#theme:checked) {
     flex-wrap: nowrap;
     border-radius: 5px;
     padding: 5px;
-  }
-  
-  .mini_block1{
-    position: absolute;
-    width: 190px;
-    top: 30px;
-    left:150px;
-    z-index: 3;
-  }
-  
-  .mini_block2{
-    position: absolute;
     width: 200px;
-    top: 170px;
+    top: 280px;
     left:30px;
     z-index: 3;
   }
   
   /*follow*/
-  
+ 
   .follow_title {
     display: grid;
     grid-template-areas: 
@@ -946,8 +960,10 @@ body:has(#theme:checked) {
     grid-area: middle;
   }
   
-  .middle_header {
+  .title_insta {
     grid-area: header;
+    width: 60%;
+    text-align: center;
   }
   
   .yoga_hash {
@@ -960,35 +976,22 @@ body:has(#theme:checked) {
     grid-area: icon;
     margin-top: 10px;
   }
-/* 
+
   .grid_block{
     display: grid;
     grid-template-areas: 
-      "left middle right";
-  }
-
-  .picture1{
-    grid-area: left;
-  }
-
-  .picture2{
-    grid-area: right;
-  }
- */
-
-.grid_block{
-  display: grid;
-  grid-template-areas: 
     "left middle right";
 }
 .div_grid{
   grid-area: left;
+  text-align: end;
+  margin-left: 15%;
 }
 
 .div_grid2{
   grid-area: right;
+  margin-right: 15%;
 }
-
 
 .pictures {
     display: grid;
@@ -998,34 +1001,29 @@ body:has(#theme:checked) {
     margin-top: 20px;
   } 
   
-  /* .grid_block{
-    display: flex;
-    flex-wrap: nowrap;
-  } */
-  
 .picture3{
-    transform: rotate(-15deg);
-    margin-right: 10%;
+  transform: rotate(15deg);
   }
   
   .picture4{
-    transform: rotate(15deg);
-    margin-left: 10%;
+  transform: rotate(-15deg);
+  margin-left: 10%;
   }
   
   .pictures_bottom{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    row-gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  margin: 10%;
+  gap: 5%;
   }
   
   .grid_picture{
-    width: 50%;
+    width: 100%;
     border: 5px solid #E5D9FD;
-    border-radius: 40%;
+    border-radius: 35%;
   }
 
   /*subscribe part*/
@@ -1034,46 +1032,58 @@ body:has(#theme:checked) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 90%;
     height: auto;
     color: white;
     background:linear-gradient(90deg,#FF52AE, #8B52FF);
     border-radius: 15px;
     margin: auto;
-    padding: 20px 5px;
-  
+    padding:5% 15%;  
+    margin: 5%;
   }
   
   .subscribe_box h1{
     font-family: lora;
     font-weight: 200;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #F5F0FF;
-  }
-  
-  .mail_button {
-    position: relative;
-    display: flex; /* アイコンとテキストを横並び */
-    flex-direction: column;
-    align-items: center; /* 中央揃え */
-    padding: 19px 15px;
-    border: none;
-    background-color: white;
-    color: #A197B4;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 40px;
-  }
-  
-  .icon {
-    width: 85%; /* アイコンサイズ調整 */
-    height: auto;
   }
   
   .subscribe_box h1,
   .subscribe_box p {
     margin: 0;
     padding: 10px 0;
+    text-align: center;
+  }
+
+  .emailform {
+    display: flex;
+    background-color: white;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    width: 60%;
+    margin: 4% 0;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  
+  .emailform input {
+    border: none;
+    border-radius: 30px;
+    position: absolute;
+    width: 30%;
+    max-width: 300px;
+  }
+  
+  .mail_button {
+    background: var(--gradient-color);
+    padding: 0.5rem 0.9rem;
+    color: white;
+    font-size: 0.7rem;
+    border: none;
+    border-radius: 30px;
+    position: relative;
+    left: 290px;
   }
   
 
